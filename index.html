@@ -34,33 +34,11 @@
 </header>
 <div class="grid" id="grid"></div>
 <footer>
-  The permanent home of the Clip Soundboard clips, kept on GitHub Pages so the board survives outside any single app.<br>
-  Clip timings come from the saved board list (last updated November 13, 2026).
+  The permanent backup home of the Clip Soundboard clips, kept on GitHub Pages so the board survives outside any single app.<br>
+  Synced from the Clip Soundboard Space; list last updated November 13, 2026.
 </footer>
 <script>
-var CLIPS = [
-  { id: "RYnFIRc0k6E", start: 76, end: 84,
-    quote: "If you don't care, then we don't care",
-    who: "Fred Durst \u2014 Limp Bizkit", source: "Rollin' (Air Raid Vehicle)" },
-  { id: "urBpdyFCZmo", start: 68, end: 77,
-    quote: "If you choose not to decide, you still have made a choice",
-    who: "Rush", source: "Freewill" },
-  { id: "SHptn_3RyYE", start: 24, end: 33,
-    quote: "Yeah toast!",
-    who: "Heywood Banks", source: "Toast" },
-  { id: "Z_s-Qk07KxA", start: 36, end: 43,
-    quote: "You've got to stand for something or you'll fall for anything",
-    who: "Aaron Tippin", source: "You've Got to Stand for Something" },
-  { id: "TOp_EW-Mirs", start: 35, end: 52,
-    quote: "Life's a dance you learn as you go. Sometimes you lead, sometimes you follow. Don't worry 'bout what you don't know. Life's a dance, you learn as you go",
-    who: "John Michael Montgomery", source: "Life's A Dance" },
-  { id: "lX9zuFS2ebk", start: 93, end: 114,
-    quote: "You wanted to be a genie, you got it. And everything that goes with it. Phenomenal cosmic powers. Itty bitty living space",
-    who: "Aladdin", source: "Aladdin (1992)" },
-  { id: "owI3q7OiqSk", start: 10, end: 62,
-    quote: "When I step forward, you have to challenge me back into my space, and I challenge you back in your space",
-    who: "Derek Reynolds (Sean Patrick Thomas)", source: "Save the Last Dance (2001)" }
-];
+var CLIPS = [{"id": "RYnFIRc0k6E", "start": 76, "end": 84, "quote": "If you don't care, then we don't care", "who": "Fred Durst — Limp Bizkit", "source": "Rollin' (Air Raid Vehicle)"}, {"id": "urBpdyFCZmo", "start": 68, "end": 77, "quote": "If you choose not to decide, you still have made a choice", "who": "Rush", "source": "Freewill"}, {"id": "SHptn_3RyYE", "start": 24, "end": 33, "quote": "Yeah toast!", "who": "Heywood Banks", "source": "Toast"}, {"id": "Z_s-Qk07KxA", "start": 36, "end": 43, "quote": "You've got to stand for something or you'll fall for anything", "who": "Aaron Tippin", "source": "You've Got to Stand for Something"}, {"id": "TOp_EW-Mirs", "start": 35, "end": 52, "quote": "Life's a dance you learn as you go. Sometimes you lead, sometimes you follow. Don't worry 'bout what you don't know. Life's a dance, you learn as you go", "who": "John Michael Montgomery", "source": "Life's A Dance (Official Music Video)"}, {"id": "lX9zuFS2ebk", "start": 93, "end": 114, "quote": "You wanted to be a genie, you got it. And everything that goes with it. Phenomenal cosmic powers. Itty bitty living space", "who": "Aladdin", "source": "Aladdin (1992)"}, {"id": "owI3q7OiqSk", "start": 10, "end": 62, "quote": "When I step forward, you have to challenge me back into my space, and I challenge you back in your space", "who": "Derek Reynolds (Sean Patrick Thomas)", "source": "Save the Last Dance (2001)"}];
 function fmt(s) { return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); }
 var grid = document.getElementById("grid");
 CLIPS.forEach(function (c) {
